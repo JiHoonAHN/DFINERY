@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EEE74EC4289E4372000E7CEE /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEE74ECB289E43E7000E7CEE /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EEE74ECA289E43E7000E7CEE /* .gitkeep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
+		EEE74ECA289E43E7000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */,
+				EEE74ECA289E43E7000E7CEE /* .gitkeep */,
 			);
 			path = "DFINERY-SDK";
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE74ECB289E43E7000E7CEE /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

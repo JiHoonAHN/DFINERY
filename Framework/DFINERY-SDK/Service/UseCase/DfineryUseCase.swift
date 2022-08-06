@@ -6,10 +6,10 @@ public class IGASDK{
     public init(appKey: String){
         self.appKey = appKey
     }
-    public static func setUserProperty() -> UserPropertiesDTO{
+    public static func setUserProperty(_ keyValue : [String : Any]) -> UserPropertiesDTO{
         return UserPropertiesDTO(birthyear: 1, gender: "", level: 1, characterClass: "", gold: 1)
     }
-    public static func addEvent(){
+    public static func addEvent(_ eventName : String, keyValye : [String : Any]){
         
     }
 }

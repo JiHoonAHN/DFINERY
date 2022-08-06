@@ -2,6 +2,6 @@ import Foundation
 import Combine
 
 protocol DefaultDfineryRepository{
-    func postAddEvent() -> AnyPublisher<Data, DfineryError>
-    func postGetEvent() -> AnyPublisher<Data, DfineryError>
+    func postAddEvent(_ keyValue : [String : Any]) -> AnyPublisher<Data, DfineryError>
+    func postGetEvent(_ eventName : String, keyValye : [String : Any]) -> AnyPublisher<Data, DfineryError>
 }

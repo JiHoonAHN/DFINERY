@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-protocol DfineryRepository{
+protocol DefaultDfineryRepository{
     func postAddEvent() -> AnyPublisher<Data, DfineryError>
     func postGetEvent() -> AnyPublisher<Data, DfineryError>
 }

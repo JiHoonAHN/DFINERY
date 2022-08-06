@@ -21,7 +21,7 @@
 		EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */; };
 		EEE74F0E289E6D81000E7CEE /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0D289E6D81000E7CEE /* Remote.swift */; };
 		EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */; };
-		EEE74F18289E7D65000E7CEE /* DefaultDfineryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F17289E7D65000E7CEE /* DefaultDfineryRepository.swift */; };
+		EEE74F18289E7D65000E7CEE /* DfineryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F17289E7D65000E7CEE /* DfineryRepository.swift */; };
 		EEE74F29289E88F0000E7CEE /* DfineryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* DfineryUseCase.swift */; };
 		EEE74F2B289E8DB9000E7CEE /* GetEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F2A289E8DB9000E7CEE /* GetEventRequest.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +46,7 @@
 		EEE74F0C289E6CDA000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EEE74F0D289E6D81000E7CEE /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
 		EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryError.swift; sourceTree = "<group>"; };
-		EEE74F17289E7D65000E7CEE /* DefaultDfineryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDfineryRepository.swift; sourceTree = "<group>"; };
+		EEE74F17289E7D65000E7CEE /* DfineryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryRepository.swift; sourceTree = "<group>"; };
 		EEE74F19289E7E8C000E7CEE /* AddEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventRequest.swift; sourceTree = "<group>"; };
 		EEE74F28289E88F0000E7CEE /* DfineryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryUseCase.swift; sourceTree = "<group>"; };
 		EEE74F2A289E8DB9000E7CEE /* GetEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventRequest.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		EEE74EEC289E4F93000E7CEE /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				EEE74F17289E7D65000E7CEE /* DefaultDfineryRepository.swift */,
+				EEE74F17289E7D65000E7CEE /* DfineryRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -429,7 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
-				EEE74F18289E7D65000E7CEE /* DefaultDfineryRepository.swift in Sources */,
+				EEE74F18289E7D65000E7CEE /* DfineryRepository.swift in Sources */,
 				EEE74EF5289E51E9000E7CEE /* CommonRequest.swift in Sources */,
 				EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */,
 				EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */,

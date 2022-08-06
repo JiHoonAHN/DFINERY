@@ -9,7 +9,7 @@ public struct AddEventReq: Equatable{
     let evt : Evt
     let common : Common
     
-    struct Evt : Equatable{
+    public struct Evt : Equatable{
         public init(createdAt: String,event : String,location : LocationReq,param : ParamReq,userProperties : UserPropertiesReq){
             self.createdAt = createdAt
             self.event = event
@@ -24,7 +24,7 @@ public struct AddEventReq: Equatable{
         let param : ParamReq
         let userProperties : UserPropertiesReq
         
-        struct LocationReq : Equatable{
+        public struct LocationReq : Equatable{
             public init(lat : Float, lng : Float){
                 self.lat = lat
                 self.lng = lng
@@ -34,7 +34,7 @@ public struct AddEventReq: Equatable{
             let lng : Float
         }
         
-        struct ParamReq: Equatable {
+        public struct ParamReq: Equatable {
             public init(menuName : String, menuId :Int){
                 self.menuName = menuName
                 self.menuId = menuId
@@ -44,7 +44,7 @@ public struct AddEventReq: Equatable{
             let menuId : Int
         }
         
-        struct UserPropertiesReq : Equatable{
+        public struct UserPropertiesReq : Equatable{
             public init(birthyear: Int, gender : String, level : Int, characterClass: String, gold : Int){
                 self.birthyear = birthyear
                 self.gender = gender
@@ -61,7 +61,7 @@ public struct AddEventReq: Equatable{
         }
     }
     
-    struct Common : Equatable{
+    public struct Common : Equatable{
         public init(identity : IdentityReq,deviceInfo : DeviceInfoReq,packageName : String,appkey : String){
             self.identity = identity
             self.deviceInfo = deviceInfo
@@ -74,12 +74,12 @@ public struct AddEventReq: Equatable{
         let packageName : String
         let appkey : String
         
-        struct IdentityReq: Equatable{
+        public struct IdentityReq: Equatable{
             let adid : String
             let adidOptOut : Bool
         }
         
-        struct DeviceInfoReq : Equatable{
+        public struct DeviceInfoReq : Equatable{
             public init(os : String, model : String, resolution: String, isPortrait: Bool, platform: String,network : String,carrier : String,language : String, country : String){
                 self.os = os
                 self.model = model

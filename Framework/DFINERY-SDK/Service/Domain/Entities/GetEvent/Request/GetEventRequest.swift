@@ -1,6 +1,6 @@
 import Foundation
 
-struct GetEventDTO: Encodable{
+struct GetEventReq: Equatable{
     let appkey : String
     let length : Int
 }

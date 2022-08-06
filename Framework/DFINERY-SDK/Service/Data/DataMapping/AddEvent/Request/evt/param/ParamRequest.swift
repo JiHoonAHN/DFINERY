@@ -1,6 +1,6 @@
 import Foundation
 
-struct ParamReq: Encodable{
+struct ParamDTO: Encodable{
     let menuName : String
     let menuId : Int
     

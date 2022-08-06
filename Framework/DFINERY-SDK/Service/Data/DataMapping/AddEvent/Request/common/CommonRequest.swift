@@ -1,8 +1,8 @@
 import Foundation
 
-struct CommonReq : Encodable{
-    let identity : IdentityReq
-    let deviceInfo : DeviceInfoReq
+struct CommonDTO : Encodable{
+    let identity : IdentityDTO
+    let deviceInfo : DeviceInfoDTO
     let packageName : String
     let appkey : String
     

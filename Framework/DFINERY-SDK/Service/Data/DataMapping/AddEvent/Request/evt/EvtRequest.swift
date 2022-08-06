@@ -1,12 +1,11 @@
 import Foundation
 
-struct EvtReq : Encodable{
+struct EvtDTO : Encodable{
     let createdAt : String
     let event : String
-    let location : LocationReq
-    let param : ParamReq
-    let userProperties : UserPropertiesReq
-    
+    let location : LocationDTO
+    let param : ParamDTO
+    let userProperties : UserPropertiesDTO
     
     enum CodingKeys : String, CodingKey{
         case createdAt = "created_at"

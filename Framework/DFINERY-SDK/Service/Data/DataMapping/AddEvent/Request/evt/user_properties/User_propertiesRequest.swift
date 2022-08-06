@@ -1,6 +1,6 @@
 import Foundation
 
-struct UserPropertiesReq : Encodable{
+public struct UserPropertiesDTO : Encodable{
     let birthyear : Int
     let gender : String
     let level : Int

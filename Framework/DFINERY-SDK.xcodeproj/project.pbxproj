@@ -15,19 +15,19 @@
 		EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EFB289E55A2000E7CEE /* ParamRequest.swift */; };
 		EEE74EFE289E571D000E7CEE /* User_propertiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EFD289E571D000E7CEE /* User_propertiesRequest.swift */; };
 		EEE74F00289E5C30000E7CEE /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EFF289E5C30000E7CEE /* LocationRequest.swift */; };
-		EEE74F02289E5D02000E7CEE /* device_infoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F01289E5D02000E7CEE /* device_infoRequest.swift */; };
-		EEE74F04289E5D0C000E7CEE /* identityRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F03289E5D0C000E7CEE /* identityRequst.swift */; };
+		EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */; };
+		EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */; };
+		EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F05289E6990000E7CEE /* BaseURL.swift */; };
+		EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
-		EEE74ECF289E44C0000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventRequest.swift; sourceTree = "<group>"; };
 		EEE74EDE289E48BA000E7CEE /* GetEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventResponse.swift; sourceTree = "<group>"; };
 		EEE74EE0289E498F000E7CEE /* AddEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventResponse.swift; sourceTree = "<group>"; };
 		EEE74EE1289E499A000E7CEE /* AddEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventRequest.swift; sourceTree = "<group>"; };
-		EEE74EE7289E4F6B000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EEE74EE9289E4F74000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EEE74EED289E4F9B000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EEE74EEE289E4F9D000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -37,8 +37,10 @@
 		EEE74EFB289E55A2000E7CEE /* ParamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamRequest.swift; sourceTree = "<group>"; };
 		EEE74EFD289E571D000E7CEE /* User_propertiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_propertiesRequest.swift; sourceTree = "<group>"; };
 		EEE74EFF289E5C30000E7CEE /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
-		EEE74F01289E5D02000E7CEE /* device_infoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = device_infoRequest.swift; sourceTree = "<group>"; };
-		EEE74F03289E5D0C000E7CEE /* identityRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = identityRequst.swift; sourceTree = "<group>"; };
+		EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device_infoRequest.swift; sourceTree = "<group>"; };
+		EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityRequst.swift; sourceTree = "<group>"; };
+		EEE74F05289E6990000E7CEE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,6 @@
 			children = (
 				EEE74EE4289E4EC5000E7CEE /* Domain */,
 				EEE74EE3289E4EC0000E7CEE /* Data */,
-				EEE74ECF289E44C0000E7CEE /* .gitkeep */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -171,7 +172,8 @@
 		EEE74EE6289E4F66000E7CEE /* API */ = {
 			isa = PBXGroup;
 			children = (
-				EEE74EE7289E4F6B000E7CEE /* .gitkeep */,
+				EEE74F05289E6990000E7CEE /* BaseURL.swift */,
+				EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -232,7 +234,7 @@
 		EEE74EF6289E5272000E7CEE /* identity */ = {
 			isa = PBXGroup;
 			children = (
-				EEE74F03289E5D0C000E7CEE /* identityRequst.swift */,
+				EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */,
 			);
 			path = identity;
 			sourceTree = "<group>";
@@ -240,7 +242,7 @@
 		EEE74EF7289E527A000E7CEE /* device_info */ = {
 			isa = PBXGroup;
 			children = (
-				EEE74F01289E5D02000E7CEE /* device_infoRequest.swift */,
+				EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */,
 			);
 			path = device_info;
 			sourceTree = "<group>";
@@ -351,9 +353,11 @@
 			files = (
 				EEE74EF5289E51E9000E7CEE /* CommonRequest.swift in Sources */,
 				EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */,
-				EEE74F04289E5D0C000E7CEE /* identityRequst.swift in Sources */,
-				EEE74F02289E5D02000E7CEE /* device_infoRequest.swift in Sources */,
+				EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */,
+				EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */,
+				EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */,
 				EEE74EF3289E5108000E7CEE /* EvtRequest.swift in Sources */,
+				EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */,
 				EEE74EFE289E571D000E7CEE /* User_propertiesRequest.swift in Sources */,
 				EEE74EDF289E48BA000E7CEE /* GetEventResponse.swift in Sources */,
 				EEE74F00289E5C30000E7CEE /* LocationRequest.swift in Sources */,

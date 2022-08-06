@@ -15,6 +15,8 @@
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		EEE74ECA289E43E7000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EEE74ECF289E44C0000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EEE74ED0289E44C2000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +49,36 @@
 		EEE74EC2289E4372000E7CEE /* DFINERY-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				EEE74ECE289E44B9000E7CEE /* Model */,
+				EEE74ECD289E44B4000E7CEE /* Service */,
+				EEE74ECC289E44AE000E7CEE /* Network */,
 				EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */,
-				EEE74ECA289E43E7000E7CEE /* .gitkeep */,
 			);
 			path = "DFINERY-SDK";
+			sourceTree = "<group>";
+		};
+		EEE74ECC289E44AE000E7CEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ECA289E43E7000E7CEE /* .gitkeep */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EEE74ECD289E44B4000E7CEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ECF289E44C0000E7CEE /* .gitkeep */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EEE74ECE289E44B9000E7CEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ED0289E44C2000E7CEE /* .gitkeep */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

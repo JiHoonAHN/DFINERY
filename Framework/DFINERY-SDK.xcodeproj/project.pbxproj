@@ -19,11 +19,8 @@
 		EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */; };
 		EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F05289E6990000E7CEE /* BaseURL.swift */; };
 		EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */; };
-		EEE74F0E289E6D81000E7CEE /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0D289E6D81000E7CEE /* Remote.swift */; };
 		EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */; };
-		EEE74F18289E7D65000E7CEE /* DfineryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F17289E7D65000E7CEE /* DfineryRepository.swift */; };
-		EEE74F29289E88F0000E7CEE /* DfineryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* DfineryUseCase.swift */; };
-		EEE74F2B289E8DB9000E7CEE /* GetEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F2A289E8DB9000E7CEE /* GetEventRequest.swift */; };
+		EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* IGASDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +30,6 @@
 		EEE74EDE289E48BA000E7CEE /* GetEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventResponse.swift; sourceTree = "<group>"; };
 		EEE74EE0289E498F000E7CEE /* AddEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventResponse.swift; sourceTree = "<group>"; };
 		EEE74EE1289E499A000E7CEE /* AddEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventRequest.swift; sourceTree = "<group>"; };
-		EEE74EED289E4F9B000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EEE74EF2289E5108000E7CEE /* EvtRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvtRequest.swift; sourceTree = "<group>"; };
 		EEE74EF4289E51E9000E7CEE /* CommonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRequest.swift; sourceTree = "<group>"; };
 		EEE74EFB289E55A2000E7CEE /* ParamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamRequest.swift; sourceTree = "<group>"; };
@@ -43,13 +39,8 @@
 		EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityRequst.swift; sourceTree = "<group>"; };
 		EEE74F05289E6990000E7CEE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		EEE74F0C289E6CDA000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		EEE74F0D289E6D81000E7CEE /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
 		EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryError.swift; sourceTree = "<group>"; };
-		EEE74F17289E7D65000E7CEE /* DfineryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryRepository.swift; sourceTree = "<group>"; };
-		EEE74F19289E7E8C000E7CEE /* AddEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventRequest.swift; sourceTree = "<group>"; };
-		EEE74F28289E88F0000E7CEE /* DfineryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryUseCase.swift; sourceTree = "<group>"; };
-		EEE74F2A289E8DB9000E7CEE /* GetEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventRequest.swift; sourceTree = "<group>"; };
+		EEE74F28289E88F0000E7CEE /* IGASDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGASDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +54,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEDB85A7289F873600F49751 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EEB289E4F8C000E7CEE /* Error */,
+				EEE74EE6289E4F66000E7CEE /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EEDB85A8289F873E00F49751 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ED4289E467F000E7CEE /* GetEvent */,
+				EEE74ED3289E4675000E7CEE /* AddEvent */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EEE74EB6289E4372000E7CEE = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +91,8 @@
 		EEE74EC2289E4372000E7CEE /* DFINERY-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB85A8289F873E00F49751 /* Model */,
+				EEDB85A7289F873600F49751 /* Network */,
 				EEE74ECD289E44B4000E7CEE /* Service */,
 				EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */,
 			);
@@ -91,10 +102,7 @@
 		EEE74ECD289E44B4000E7CEE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				EEE74F0A289E6CCE000E7CEE /* Repositories */,
-				EEE74F09289E6CC5000E7CEE /* UseCase */,
-				EEE74EE4289E4EC5000E7CEE /* Domain */,
-				EEE74EE3289E4EC0000E7CEE /* Data */,
+				EEE74F28289E88F0000E7CEE /* IGASDK.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -151,35 +159,6 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		EEE74EE3289E4EC0000E7CEE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74EE8289E4F6E000E7CEE /* DataSource */,
-				EEE74EE6289E4F66000E7CEE /* API */,
-				EEE74EE5289E4EDB000E7CEE /* DataMapping */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		EEE74EE4289E4EC5000E7CEE /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74EEC289E4F93000E7CEE /* Repositories */,
-				EEE74EEB289E4F8C000E7CEE /* Error */,
-				EEE74EEA289E4F84000E7CEE /* Entities */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		EEE74EE5289E4EDB000E7CEE /* DataMapping */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74ED4289E467F000E7CEE /* GetEvent */,
-				EEE74ED3289E4675000E7CEE /* AddEvent */,
-			);
-			path = DataMapping;
-			sourceTree = "<group>";
-		};
 		EEE74EE6289E4F66000E7CEE /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,38 +168,12 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		EEE74EE8289E4F6E000E7CEE /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F0D289E6D81000E7CEE /* Remote.swift */,
-			);
-			path = DataSource;
-			sourceTree = "<group>";
-		};
-		EEE74EEA289E4F84000E7CEE /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F12289E7AAC000E7CEE /* AddEvent */,
-				EEE74F11289E7AA3000E7CEE /* GetEvent */,
-				EEE74EED289E4F9B000E7CEE /* .gitkeep */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
 		EEE74EEB289E4F8C000E7CEE /* Error */ = {
 			isa = PBXGroup;
 			children = (
 				EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */,
 			);
 			path = Error;
-			sourceTree = "<group>";
-		};
-		EEE74EEC289E4F93000E7CEE /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F17289E7D65000E7CEE /* DfineryRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		EEE74EF0289E50F0000E7CEE /* evt */ = {
@@ -282,70 +235,6 @@
 				EEE74EFD289E571D000E7CEE /* User_propertiesRequest.swift */,
 			);
 			path = user_properties;
-			sourceTree = "<group>";
-		};
-		EEE74F09289E6CC5000E7CEE /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F28289E88F0000E7CEE /* DfineryUseCase.swift */,
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
-		EEE74F0A289E6CCE000E7CEE /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F0C289E6CDA000E7CEE /* .gitkeep */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		EEE74F11289E7AA3000E7CEE /* GetEvent */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F16289E7CEE000E7CEE /* Request */,
-				EEE74F15289E7CEE000E7CEE /* Response */,
-			);
-			path = GetEvent;
-			sourceTree = "<group>";
-		};
-		EEE74F12289E7AAC000E7CEE /* AddEvent */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F14289E7B1C000E7CEE /* Request */,
-				EEE74F13289E7B15000E7CEE /* Response */,
-			);
-			path = AddEvent;
-			sourceTree = "<group>";
-		};
-		EEE74F13289E7B15000E7CEE /* Response */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		EEE74F14289E7B1C000E7CEE /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F19289E7E8C000E7CEE /* AddEventRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		EEE74F15289E7CEE000E7CEE /* Response */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		EEE74F16289E7CEE000E7CEE /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				EEE74F2A289E8DB9000E7CEE /* GetEventRequest.swift */,
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
-				EEE74F18289E7D65000E7CEE /* DfineryRepository.swift in Sources */,
 				EEE74EF5289E51E9000E7CEE /* CommonRequest.swift in Sources */,
 				EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */,
 				EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */,
@@ -437,13 +325,11 @@
 				EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */,
 				EEE74EF3289E5108000E7CEE /* EvtRequest.swift in Sources */,
 				EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */,
-				EEE74F29289E88F0000E7CEE /* DfineryUseCase.swift in Sources */,
+				EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */,
 				EEE74EFE289E571D000E7CEE /* User_propertiesRequest.swift in Sources */,
-				EEE74F2B289E8DB9000E7CEE /* GetEventRequest.swift in Sources */,
 				EEE74EDF289E48BA000E7CEE /* GetEventResponse.swift in Sources */,
 				EEE74F00289E5C30000E7CEE /* LocationRequest.swift in Sources */,
 				EEE74EDD289E47F8000E7CEE /* GetEventRequest.swift in Sources */,
-				EEE74F0E289E6D81000E7CEE /* Remote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

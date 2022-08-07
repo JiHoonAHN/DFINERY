@@ -7,7 +7,7 @@ class HttpClient{
     
     func request<T: Codable>(path : String ,type : T.Type) -> AnyPublisher<T, DfineryError>{
         return URLSession.shared
-            .dataTaskPublisher(for: )
+            .dataTaskPublisher(for: URL(string: path, relativeTo: BaseURL().dfineryBaseURL)!)
             .tryMap(){ data, response in
                 guard let httpResponse = response as? HTTPURLResponse else{
                     throw DfineryError.error(message: "Response Error", errorBody: .init())

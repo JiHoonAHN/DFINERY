@@ -1,6 +1,6 @@
 import Foundation
 
-struct LocationDTO : Encodable{
+public struct LocationDTO : Codable{
     let lat : Float
     let lng : Float
 }

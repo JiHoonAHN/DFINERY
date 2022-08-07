@@ -1,6 +1,6 @@
 import Foundation
 
-struct GetEventDTO: Encodable{
+struct GetEventDTO: Codable{
     let appkey : String
     let length : Int
 }

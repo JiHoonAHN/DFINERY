@@ -1,6 +1,6 @@
 import Foundation
 
-struct CommonDTO : Encodable{
+struct CommonDTO : Codable{
     let identity : IdentityDTO
     let deviceInfo : DeviceInfoDTO
     let packageName : String

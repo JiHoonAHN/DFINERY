@@ -1,6 +1,6 @@
 import Foundation
 
-struct AddEventDTO: Encodable{
-    let evt : EvtReq
-    let common : CommonReq
+public struct AddEventDTO: Codable{
+    let evt : EvtDTO
+    let common : CommonDTO
 }

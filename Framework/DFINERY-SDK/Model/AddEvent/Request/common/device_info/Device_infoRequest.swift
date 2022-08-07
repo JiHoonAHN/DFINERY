@@ -1,6 +1,6 @@
 import Foundation
 
-struct DeviceInfoDTO : Encodable{
+struct DeviceInfoDTO : Codable{
     let os : String
     let model : String
     let resolution : String

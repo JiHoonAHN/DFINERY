@@ -1,6 +1,6 @@
 import Foundation
 
-struct IdentityDTO: Encodable{
+struct IdentityDTO: Codable{
     let adid : String
     let adidOptOut : Bool
     

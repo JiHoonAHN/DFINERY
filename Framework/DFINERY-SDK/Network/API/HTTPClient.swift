@@ -1,11 +1,10 @@
 import Foundation
 import Combine
 
-
-class HttpClient{
-    static let shared = HttpClient()
+public class HttpClient{
+    public static let shared = HttpClient()
     
-    func request<T: Codable>(path : String ,type : T.Type) -> AnyPublisher<T, DfineryError>{
+    public func request<T: Codable>(path : String ,type : T.Type) -> AnyPublisher<T, DfineryError>{
         return URLSession.shared
             .dataTaskPublisher(for: URL(string: path, relativeTo: BaseURL().dfineryBaseURL)!)
             .tryMap(){ data, response in

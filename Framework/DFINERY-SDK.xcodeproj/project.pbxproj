@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB85AD289FE26800F49751 /* DictToJson.swift */; };
 		EEE74EC4289E4372000E7CEE /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEE74EDD289E47F8000E7CEE /* GetEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */; };
 		EEE74EDF289E48BA000E7CEE /* GetEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EDE289E48BA000E7CEE /* GetEventResponse.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEDB85AD289FE26800F49751 /* DictToJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictToJson.swift; sourceTree = "<group>"; };
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventRequest.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EEDB85AC289FE01C00F49751 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EEDB85AD289FE26800F49751 /* DictToJson.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		EEE74EB6289E4372000E7CEE = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		EEE74EC2289E4372000E7CEE /* DFINERY-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB85AC289FE01C00F49751 /* Util */,
 				EEDB85A8289F873E00F49751 /* Model */,
 				EEDB85A7289F873600F49751 /* Network */,
 				EEE74ECD289E44B4000E7CEE /* Service */,
@@ -323,6 +334,7 @@
 				EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */,
 				EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */,
 				EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */,
+				EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */,
 				EEE74EF3289E5108000E7CEE /* EvtRequest.swift in Sources */,
 				EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */,
 				EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */,

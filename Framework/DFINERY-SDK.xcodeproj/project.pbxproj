@@ -7,14 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB85AD289FE26800F49751 /* DictToJson.swift */; };
 		EEE74EC4289E4372000E7CEE /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEE74ECB289E43E7000E7CEE /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EEE74ECA289E43E7000E7CEE /* .gitkeep */; };
+		EEE74EDD289E47F8000E7CEE /* GetEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */; };
+		EEE74EDF289E48BA000E7CEE /* GetEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EDE289E48BA000E7CEE /* GetEventResponse.swift */; };
+		EEE74EF3289E5108000E7CEE /* EvtRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EF2289E5108000E7CEE /* EvtRequest.swift */; };
+		EEE74EF5289E51E9000E7CEE /* CommonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EF4289E51E9000E7CEE /* CommonRequest.swift */; };
+		EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EFB289E55A2000E7CEE /* ParamRequest.swift */; };
+		EEE74EFE289E571D000E7CEE /* User_propertiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EFD289E571D000E7CEE /* User_propertiesRequest.swift */; };
+		EEE74F00289E5C30000E7CEE /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EFF289E5C30000E7CEE /* LocationRequest.swift */; };
+		EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */; };
+		EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */; };
+		EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F05289E6990000E7CEE /* BaseURL.swift */; };
+		EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */; };
+		EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */; };
+		EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* IGASDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEDB85AD289FE26800F49751 /* DictToJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictToJson.swift; sourceTree = "<group>"; };
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
-		EEE74ECA289E43E7000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventRequest.swift; sourceTree = "<group>"; };
+		EEE74EDE289E48BA000E7CEE /* GetEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEventResponse.swift; sourceTree = "<group>"; };
+		EEE74EE0289E498F000E7CEE /* AddEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventResponse.swift; sourceTree = "<group>"; };
+		EEE74EE1289E499A000E7CEE /* AddEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventRequest.swift; sourceTree = "<group>"; };
+		EEE74EF2289E5108000E7CEE /* EvtRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvtRequest.swift; sourceTree = "<group>"; };
+		EEE74EF4289E51E9000E7CEE /* CommonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRequest.swift; sourceTree = "<group>"; };
+		EEE74EFB289E55A2000E7CEE /* ParamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamRequest.swift; sourceTree = "<group>"; };
+		EEE74EFD289E571D000E7CEE /* User_propertiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_propertiesRequest.swift; sourceTree = "<group>"; };
+		EEE74EFF289E5C30000E7CEE /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device_infoRequest.swift; sourceTree = "<group>"; };
+		EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityRequst.swift; sourceTree = "<group>"; };
+		EEE74F05289E6990000E7CEE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryError.swift; sourceTree = "<group>"; };
+		EEE74F28289E88F0000E7CEE /* IGASDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGASDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +56,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEDB85A7289F873600F49751 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EEB289E4F8C000E7CEE /* Error */,
+				EEE74EE6289E4F66000E7CEE /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EEDB85A8289F873E00F49751 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ED4289E467F000E7CEE /* GetEvent */,
+				EEE74ED3289E4675000E7CEE /* AddEvent */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEDB85AC289FE01C00F49751 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EEDB85AD289FE26800F49751 /* DictToJson.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		EEE74EB6289E4372000E7CEE = {
 			isa = PBXGroup;
 			children = (
@@ -47,10 +101,151 @@
 		EEE74EC2289E4372000E7CEE /* DFINERY-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB85AC289FE01C00F49751 /* Util */,
+				EEDB85A8289F873E00F49751 /* Model */,
+				EEDB85A7289F873600F49751 /* Network */,
+				EEE74ECD289E44B4000E7CEE /* Service */,
 				EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */,
-				EEE74ECA289E43E7000E7CEE /* .gitkeep */,
 			);
 			path = "DFINERY-SDK";
+			sourceTree = "<group>";
+		};
+		EEE74ECD289E44B4000E7CEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F28289E88F0000E7CEE /* IGASDK.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EEE74ED3289E4675000E7CEE /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ED6289E4694000E7CEE /* Response */,
+				EEE74ED5289E468D000E7CEE /* Request */,
+			);
+			path = AddEvent;
+			sourceTree = "<group>";
+		};
+		EEE74ED4289E467F000E7CEE /* GetEvent */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74ED7289E469A000E7CEE /* Response */,
+				EEE74ED8289E469A000E7CEE /* Request */,
+			);
+			path = GetEvent;
+			sourceTree = "<group>";
+		};
+		EEE74ED5289E468D000E7CEE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EF1289E50F6000E7CEE /* common */,
+				EEE74EF0289E50F0000E7CEE /* evt */,
+				EEE74EE1289E499A000E7CEE /* AddEventRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EEE74ED6289E4694000E7CEE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EE0289E498F000E7CEE /* AddEventResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EEE74ED7289E469A000E7CEE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EDE289E48BA000E7CEE /* GetEventResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		EEE74ED8289E469A000E7CEE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EEE74EE6289E4F66000E7CEE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F05289E6990000E7CEE /* BaseURL.swift */,
+				EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EEE74EEB289E4F8C000E7CEE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		EEE74EF0289E50F0000E7CEE /* evt */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EFA289E53BA000E7CEE /* user_properties */,
+				EEE74EF9289E53B2000E7CEE /* param */,
+				EEE74EF8289E53AD000E7CEE /* location */,
+				EEE74EF2289E5108000E7CEE /* EvtRequest.swift */,
+			);
+			path = evt;
+			sourceTree = "<group>";
+		};
+		EEE74EF1289E50F6000E7CEE /* common */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EF7289E527A000E7CEE /* device_info */,
+				EEE74EF6289E5272000E7CEE /* identity */,
+				EEE74EF4289E51E9000E7CEE /* CommonRequest.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		EEE74EF6289E5272000E7CEE /* identity */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */,
+			);
+			path = identity;
+			sourceTree = "<group>";
+		};
+		EEE74EF7289E527A000E7CEE /* device_info */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */,
+			);
+			path = device_info;
+			sourceTree = "<group>";
+		};
+		EEE74EF8289E53AD000E7CEE /* location */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EFF289E5C30000E7CEE /* LocationRequest.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		EEE74EF9289E53B2000E7CEE /* param */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EFB289E55A2000E7CEE /* ParamRequest.swift */,
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		EEE74EFA289E53BA000E7CEE /* user_properties */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EFD289E571D000E7CEE /* User_propertiesRequest.swift */,
+			);
+			path = user_properties;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +291,7 @@
 				TargetAttributes = {
 					EEE74EBF289E4372000E7CEE = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -122,7 +318,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE74ECB289E43E7000E7CEE /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +328,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
+				EEE74EF5289E51E9000E7CEE /* CommonRequest.swift in Sources */,
+				EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */,
+				EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */,
+				EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */,
+				EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */,
+				EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */,
+				EEE74EF3289E5108000E7CEE /* EvtRequest.swift in Sources */,
+				EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */,
+				EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */,
+				EEE74EFE289E571D000E7CEE /* User_propertiesRequest.swift in Sources */,
+				EEE74EDF289E48BA000E7CEE /* GetEventResponse.swift in Sources */,
+				EEE74F00289E5C30000E7CEE /* LocationRequest.swift in Sources */,
+				EEE74EDD289E47F8000E7CEE /* GetEventRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +471,7 @@
 		EEE74EC8289E4372000E7CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -282,6 +492,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +501,7 @@
 		EEE74EC9289E4372000E7CEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

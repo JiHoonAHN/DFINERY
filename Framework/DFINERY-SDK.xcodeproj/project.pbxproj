@@ -31,6 +31,7 @@
 		EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteResponse.swift; sourceTree = "<group>"; };
 		EEBC00D028A2DEDD00F00047 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EEBC00D328A2DEEB00F00047 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		EEBC00D728A2ECCC00F00047 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		EEC9187228A27DAF00891E5C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EEC9187628A27DBF00891E5C /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		EEC9187828A27DE800891E5C /* DfineryAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfineryAPIService.swift; sourceTree = "<group>"; };
@@ -132,6 +133,14 @@
 			path = Identity;
 			sourceTree = "<group>";
 		};
+		EEBC00D628A2ECCC00F00047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D728A2ECCC00F00047 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EECE25E028A2D72000BA1782 /* OSLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +193,7 @@
 			children = (
 				EEE74EC2289E4372000E7CEE /* DFINERY-SDK */,
 				EEE74EC1289E4372000E7CEE /* Products */,
+				EEBC00D628A2ECCC00F00047 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

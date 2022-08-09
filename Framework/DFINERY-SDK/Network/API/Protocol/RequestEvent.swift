@@ -1,7 +1,7 @@
 import Foundation
 
 protocol RequestEvent {
-  func RequestBody(
+  func requestBody(
     appKey: String,
     event: String,
     param: [String: Any]?,

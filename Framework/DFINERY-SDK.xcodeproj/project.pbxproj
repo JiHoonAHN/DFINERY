@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EEBC00C428A2DB1100F00047 /* RequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00C328A2DB1100F00047 /* RequestEvent.swift */; };
 		EEBC00C828A2DCDC00F00047 /* CompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */; };
+		EEBC00D128A2DEDD00F00047 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00D028A2DEDD00F00047 /* Location.swift */; };
+		EEBC00D428A2DEEB00F00047 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00D328A2DEEB00F00047 /* Identity.swift */; };
 		EEC9187528A27DAF00891E5C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187228A27DAF00891E5C /* APIClient.swift */; };
 		EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187628A27DBF00891E5C /* DateExt.swift */; };
 		EEC9187928A27DE800891E5C /* DfineryAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187828A27DE800891E5C /* DfineryAPIService.swift */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		EEBC00C328A2DB1100F00047 /* RequestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEvent.swift; sourceTree = "<group>"; };
 		EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteResponse.swift; sourceTree = "<group>"; };
+		EEBC00D028A2DEDD00F00047 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EEBC00D328A2DEEB00F00047 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		EEC9187228A27DAF00891E5C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EEC9187628A27DBF00891E5C /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		EEC9187828A27DE800891E5C /* DfineryAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfineryAPIService.swift; sourceTree = "<group>"; };
@@ -103,6 +107,31 @@
 			path = Dictionary;
 			sourceTree = "<group>";
 		};
+		EEBC00CE28A2DED300F00047 /* Req */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D228A2DEE000F00047 /* Identity */,
+				EEBC00CF28A2DED800F00047 /* Location */,
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
+		EEBC00CF28A2DED800F00047 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D028A2DEDD00F00047 /* Location.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		EEBC00D228A2DEE000F00047 /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D328A2DEEB00F00047 /* Identity.swift */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
 		EECE25E028A2D72000BA1782 /* OSLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +162,7 @@
 		EEDB85A8289F873E00F49751 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEBC00CE28A2DED300F00047 /* Req */,
 				EEBC00C628A2DCDC00F00047 /* Res */,
 			);
 			path = Model;
@@ -289,10 +319,12 @@
 				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
 				EEC9187528A27DAF00891E5C /* APIClient.swift in Sources */,
 				EECE25EF28A2D77600BA1782 /* LogExt.swift in Sources */,
+				EEBC00D428A2DEEB00F00047 /* Identity.swift in Sources */,
 				EEBC00C828A2DCDC00F00047 /* CompleteResponse.swift in Sources */,
 				EECE25EA28A2D73A00BA1782 /* NetworkDispatcher.swift in Sources */,
 				EEC9187928A27DE800891E5C /* DfineryAPIService.swift in Sources */,
 				EEDB85AE289FE26800F49751 /* DictToEncode.swift in Sources */,
+				EEBC00D128A2DEDD00F00047 /* Location.swift in Sources */,
 				EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */,
 				EECE25E828A2D73A00BA1782 /* BaseURL.swift in Sources */,
 				EECE25EB28A2D73A00BA1782 /* RequestClient.swift in Sources */,

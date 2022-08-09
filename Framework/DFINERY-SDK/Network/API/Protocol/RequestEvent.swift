@@ -6,7 +6,7 @@ protocol RequestEvent {
     eventName: String,
     param: [String: Any]?,
     userProperties: [String: Any]?,
-    identity: [String: Any],
+    identity: UserIdentity,
     location: UserLocation?
   ) -> Data?
 }

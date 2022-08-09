@@ -10,9 +10,8 @@ final class DfineryAPIService{
     let apiClient = APIClient()
     
     func addEvent(_ eventName : String,_ keyValue : [String : Any]?){
-        apiClient.dispatch(AddEventRequest(body: keyValue ?? .init()))
-            .sink(receiveCompletion: {result in }, receiveValue: {_ in})
-            .store(in: &cancellable)
+        
+        
     }
     func setUserProperty(_ keyValue : [String : Any]?){
         

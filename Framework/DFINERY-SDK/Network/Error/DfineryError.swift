@@ -13,4 +13,3 @@ public enum DfineryError : LocalizedError, Equatable{
     case urlSessionFailed(_ error: URLError)
     case unknownError
 }
-

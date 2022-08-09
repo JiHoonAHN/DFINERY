@@ -10,18 +10,17 @@ public final class IGASDK{
     let api = APIClient()
     
     //MARK: - Properties
-    private let appKey : String
-    
+    private var appKey : String = .init()
+    private var userProperties: [String: Any]? = .init()
+
     //MARK: - init
-    public init(appKey: String){
+    public init(appKey: String = ""){
         self.appKey = appKey
     }
 
     //MARK: - Method
     public static func setUserProperty(_ keyValue : [String : Any]?){
-        DfineryAPIService.shared.setUserProperty(keyValue)
-        print()
-        
+        IGASDK().userProperties = keyValue
     }
     public static func addEvent(_ eventName : String,_ keyValue : [String : Any]){
         DfineryAPIService.shared.addEvent(eventName, keyValue)

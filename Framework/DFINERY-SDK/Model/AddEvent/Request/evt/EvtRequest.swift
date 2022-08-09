@@ -3,7 +3,7 @@ import Foundation
 public struct EvtDTO : Codable{
     let createdAt : String
     let event : String
-    let location : LocationDTO
+    let location : LocationDTO?
     let param : ParamDTO
     let userProperties : UserPropertiesDTO
     

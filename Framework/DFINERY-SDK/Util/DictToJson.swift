@@ -1,11 +1,11 @@
 import Foundation
 
-public class DictToJson {
-    public static func dictionaryToObject<T:Decodable>(objectType:T.Type,dictionary:[String:Any]) -> Data? {
-        guard let dictionaries = try? JSONSerialization.data(withJSONObject: dictionary) else { return nil }
-        let encoder = JSONEncoder()
-        encoder.keyEncodingStrategy = .convertToSnakeCase
-        let object = try? encoder.encode(dictionaries)
-        return object
+extension Encodable {
+    var toDictionary: [String: Any] {
+        guard let data = try? JSONEncoder().encode(self) else { return [:] }
+        guard let dictionary = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+            return [:]
+        }
+        return dictionary
     }
 }

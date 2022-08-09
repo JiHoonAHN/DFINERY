@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEC9187328A27DAF00891E5C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187028A27DAF00891E5C /* Request.swift */; };
+		EEC9187428A27DAF00891E5C /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187128A27DAF00891E5C /* NetworkDispatcher.swift */; };
+		EEC9187528A27DAF00891E5C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187228A27DAF00891E5C /* APIClient.swift */; };
+		EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187628A27DBF00891E5C /* DateExt.swift */; };
+		EEC9187928A27DE800891E5C /* DfineryAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187828A27DE800891E5C /* DfineryAPIService.swift */; };
+		EEC9187A28A27DFF00891E5C /* AddEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EE1289E499A000E7CEE /* AddEventRequest.swift */; };
 		EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB85AD289FE26800F49751 /* DictToJson.swift */; };
 		EEE74EC4289E4372000E7CEE /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEE74EDD289E47F8000E7CEE /* GetEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74EDC289E47F8000E7CEE /* GetEventRequest.swift */; };
@@ -19,12 +25,16 @@
 		EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */; };
 		EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */; };
 		EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F05289E6990000E7CEE /* BaseURL.swift */; };
-		EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */; };
 		EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */; };
 		EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* IGASDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEC9187028A27DAF00891E5C /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EEC9187128A27DAF00891E5C /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		EEC9187228A27DAF00891E5C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EEC9187628A27DBF00891E5C /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		EEC9187828A27DE800891E5C /* DfineryAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfineryAPIService.swift; sourceTree = "<group>"; };
 		EEDB85AD289FE26800F49751 /* DictToJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictToJson.swift; sourceTree = "<group>"; };
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
@@ -40,7 +50,6 @@
 		EEE74F01289E5D02000E7CEE /* Device_infoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device_infoRequest.swift; sourceTree = "<group>"; };
 		EEE74F03289E5D0C000E7CEE /* IdentityRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityRequst.swift; sourceTree = "<group>"; };
 		EEE74F05289E6990000E7CEE /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
-		EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryError.swift; sourceTree = "<group>"; };
 		EEE74F28289E88F0000E7CEE /* IGASDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGASDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +86,7 @@
 		EEDB85AC289FE01C00F49751 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EEC9187628A27DBF00891E5C /* DateExt.swift */,
 				EEDB85AD289FE26800F49751 /* DictToJson.swift */,
 			);
 			path = Util;
@@ -113,6 +123,7 @@
 		EEE74ECD289E44B4000E7CEE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				EEC9187828A27DE800891E5C /* DfineryAPIService.swift */,
 				EEE74F28289E88F0000E7CEE /* IGASDK.swift */,
 			);
 			path = Service;
@@ -173,8 +184,10 @@
 		EEE74EE6289E4F66000E7CEE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EEC9187228A27DAF00891E5C /* APIClient.swift */,
+				EEC9187128A27DAF00891E5C /* NetworkDispatcher.swift */,
+				EEC9187028A27DAF00891E5C /* Request.swift */,
 				EEE74F05289E6990000E7CEE /* BaseURL.swift */,
-				EEE74F07289E6BB6000E7CEE /* HTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -331,17 +344,22 @@
 				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
 				EEE74EF5289E51E9000E7CEE /* CommonRequest.swift in Sources */,
 				EEE74EFC289E55A2000E7CEE /* ParamRequest.swift in Sources */,
+				EEC9187528A27DAF00891E5C /* APIClient.swift in Sources */,
+				EEC9187428A27DAF00891E5C /* NetworkDispatcher.swift in Sources */,
 				EEE74F06289E6990000E7CEE /* BaseURL.swift in Sources */,
+				EEC9187928A27DE800891E5C /* DfineryAPIService.swift in Sources */,
 				EEE74F04289E5D0C000E7CEE /* IdentityRequst.swift in Sources */,
 				EEE74F02289E5D02000E7CEE /* Device_infoRequest.swift in Sources */,
 				EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */,
 				EEE74EF3289E5108000E7CEE /* EvtRequest.swift in Sources */,
-				EEE74F08289E6BB6000E7CEE /* HTTPClient.swift in Sources */,
+				EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */,
 				EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */,
 				EEE74EFE289E571D000E7CEE /* User_propertiesRequest.swift in Sources */,
 				EEE74EDF289E48BA000E7CEE /* GetEventResponse.swift in Sources */,
+				EEC9187328A27DAF00891E5C /* Request.swift in Sources */,
 				EEE74F00289E5C30000E7CEE /* LocationRequest.swift in Sources */,
 				EEE74EDD289E47F8000E7CEE /* GetEventRequest.swift in Sources */,
+				EEC9187A28A27DFF00891E5C /* AddEventRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

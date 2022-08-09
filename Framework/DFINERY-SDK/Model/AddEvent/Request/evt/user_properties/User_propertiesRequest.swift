@@ -12,3 +12,5 @@ public struct UserPropertiesDTO : Codable{
         case characterClass = "character_class"
     }
 }
+
+

@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEBC00C428A2DB1100F00047 /* RequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00C328A2DB1100F00047 /* RequestEvent.swift */; };
+		EEBC00C828A2DCDC00F00047 /* CompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */; };
 		EEC9187528A27DAF00891E5C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187228A27DAF00891E5C /* APIClient.swift */; };
 		EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187628A27DBF00891E5C /* DateExt.swift */; };
 		EEC9187928A27DE800891E5C /* DfineryAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187828A27DE800891E5C /* DfineryAPIService.swift */; };
-		EECE25E228A2D72000BA1782 /* LogExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E128A2D72000BA1782 /* LogExt.swift */; };
 		EECE25E828A2D73A00BA1782 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E428A2D73A00BA1782 /* BaseURL.swift */; };
 		EECE25E928A2D73A00BA1782 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E528A2D73A00BA1782 /* Request.swift */; };
 		EECE25EA28A2D73A00BA1782 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E628A2D73A00BA1782 /* NetworkDispatcher.swift */; };
 		EECE25EB28A2D73A00BA1782 /* RequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E728A2D73A00BA1782 /* RequestClient.swift */; };
 		EECE25EE28A2D77600BA1782 /* DeviceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25EC28A2D77600BA1782 /* DeviceExt.swift */; };
 		EECE25EF28A2D77600BA1782 /* LogExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25ED28A2D77600BA1782 /* LogExt.swift */; };
-		EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB85AD289FE26800F49751 /* DictToJson.swift */; };
+		EEDB85AE289FE26800F49751 /* DictToEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB85AD289FE26800F49751 /* DictToEncode.swift */; };
 		EEE74EC4289E4372000E7CEE /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */; };
 		EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* IGASDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEBC00C328A2DB1100F00047 /* RequestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEvent.swift; sourceTree = "<group>"; };
+		EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteResponse.swift; sourceTree = "<group>"; };
 		EEC9187228A27DAF00891E5C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EEC9187628A27DBF00891E5C /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		EEC9187828A27DE800891E5C /* DfineryAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DfineryAPIService.swift; sourceTree = "<group>"; };
@@ -34,7 +37,7 @@
 		EECE25E728A2D73A00BA1782 /* RequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestClient.swift; sourceTree = "<group>"; };
 		EECE25EC28A2D77600BA1782 /* DeviceExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExt.swift; sourceTree = "<group>"; };
 		EECE25ED28A2D77600BA1782 /* LogExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogExt.swift; sourceTree = "<group>"; };
-		EEDB85AD289FE26800F49751 /* DictToJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictToJson.swift; sourceTree = "<group>"; };
+		EEDB85AD289FE26800F49751 /* DictToEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictToEncode.swift; sourceTree = "<group>"; };
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
 		EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryError.swift; sourceTree = "<group>"; };
@@ -52,6 +55,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEBC00C228A2DAFB00F00047 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00C328A2DB1100F00047 /* RequestEvent.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EEBC00C628A2DCDC00F00047 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		EEBC00CA28A2DDEC00F00047 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				EECE25EC28A2D77600BA1782 /* DeviceExt.swift */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		EEBC00CB28A2DDF400F00047 /* OSLog */ = {
+			isa = PBXGroup;
+			children = (
+				EECE25ED28A2D77600BA1782 /* LogExt.swift */,
+			);
+			path = OSLog;
+			sourceTree = "<group>";
+		};
+		EEBC00CC28A2DDFC00F00047 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				EEC9187628A27DBF00891E5C /* DateExt.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		EEBC00CD28A2DE0100F00047 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				EEDB85AD289FE26800F49751 /* DictToEncode.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
 		EECE25E028A2D72000BA1782 /* OSLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +133,7 @@
 		EEDB85A8289F873E00F49751 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEBC00C628A2DCDC00F00047 /* Res */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,10 +141,10 @@
 		EEDB85AC289FE01C00F49751 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				EECE25EC28A2D77600BA1782 /* DeviceExt.swift */,
-				EECE25ED28A2D77600BA1782 /* LogExt.swift */,
-				EEC9187628A27DBF00891E5C /* DateExt.swift */,
-				EEDB85AD289FE26800F49751 /* DictToJson.swift */,
+				EEBC00CD28A2DE0100F00047 /* Dictionary */,
+				EEBC00CC28A2DDFC00F00047 /* Date */,
+				EEBC00CB28A2DDF400F00047 /* OSLog */,
+				EEBC00CA28A2DDEC00F00047 /* UIDevice */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -138,9 +190,10 @@
 		EEE74EE6289E4F66000E7CEE /* API */ = {
 			isa = PBXGroup;
 			children = (
-				EECE25E728A2D73A00BA1782 /* RequestClient.swift */,
+				EEBC00C228A2DAFB00F00047 /* Protocol */,
 				EECE25E328A2D73A00BA1782 /* Setting */,
 				EEC9187228A27DAF00891E5C /* APIClient.swift */,
+				EECE25E728A2D73A00BA1782 /* RequestClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -233,18 +286,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EECE25E228A2D72000BA1782 /* LogExt.swift in Sources */,
 				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
 				EEC9187528A27DAF00891E5C /* APIClient.swift in Sources */,
 				EECE25EF28A2D77600BA1782 /* LogExt.swift in Sources */,
+				EEBC00C828A2DCDC00F00047 /* CompleteResponse.swift in Sources */,
 				EECE25EA28A2D73A00BA1782 /* NetworkDispatcher.swift in Sources */,
 				EEC9187928A27DE800891E5C /* DfineryAPIService.swift in Sources */,
-				EEDB85AE289FE26800F49751 /* DictToJson.swift in Sources */,
+				EEDB85AE289FE26800F49751 /* DictToEncode.swift in Sources */,
 				EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */,
 				EECE25E828A2D73A00BA1782 /* BaseURL.swift in Sources */,
 				EECE25EB28A2D73A00BA1782 /* RequestClient.swift in Sources */,
 				EECE25E928A2D73A00BA1782 /* Request.swift in Sources */,
 				EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */,
+				EEBC00C428A2DB1100F00047 /* RequestEvent.swift in Sources */,
 				EECE25EE28A2D77600BA1782 /* DeviceExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

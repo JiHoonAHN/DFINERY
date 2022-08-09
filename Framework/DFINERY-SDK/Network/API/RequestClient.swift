@@ -50,7 +50,16 @@ final class RequestClient : RequestEvent{
                 
             ],
             "common" : [
-                
+                "identity" : [
+                    "adid" : identity.appleAdidIdentity,
+                    "adid_opt_out" : identity.adidOptOut
+                ],
+                "device_info" : [
+                    "os" : "",
+                    "model" : "",
+                    "resolution" : "\(resolution.bounds.width)x\(resolution.bounds.height)",
+                    "is_portrait" : UIDevice().deviceIsPortrait()
+                ]
             ],
             "package_name" : Bundle.main.bundleIdentifier ?? "",
             "appkey" : "appkey\(appKey)"

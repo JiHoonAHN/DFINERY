@@ -7,6 +7,6 @@ protocol RequestEvent {
     param: [String: Any]?,
     userProperties: [String: Any]?,
     identity: [String: Any],
-    location: [String: Any]?
+    location: UserLocation?
   ) -> Data?
 }

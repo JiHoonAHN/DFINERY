@@ -4,7 +4,7 @@ import UIKit
 
 final class RequestClient : RequestEvent{
     //MARK: - Properties
-    private let networkMonitoring : NWPathMonitor // "network": "wifi", 부분 때문에 Network를 사용하였습니다.
+    private let networkMonitoring : NWPathMonitor // "network": "wifi", 부분 때문에 Network를 사용 사용하였습니다.
     private let deviceInfo : UIDevice
     private let resolution : UIScreen
     private let carrier : [String: CTCarrier]?
@@ -38,9 +38,24 @@ final class RequestClient : RequestEvent{
         identity: UserIdentity,
         location: UserLocation?
     ) -> Data? {
-        let a : [String: Any] = [:]
+        let dictionary : [String: Any] = [
+            "evt" : [
+                "created_at" : Date().usingDate(),
+                "event" : event,
+                "location" : [
+                    "lat" : location?.lat,
+                    "lng" : location?.lng
+                ],
+                "param" : param ?? [:]
+                
+            ],
+            "common" : [
+                
+            ],
+            "package_name" : Bundle.main.bundleIdentifier ?? "",
+            "appkey" : "appkey\(appKey)"
+        ]
         
-        return Data()
+        return Data().encoding(dictionary)
     }
-    
 }

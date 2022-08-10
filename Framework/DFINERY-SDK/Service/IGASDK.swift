@@ -2,6 +2,8 @@ import Foundation
 import Combine
 
 public final class IGASDK{
+    public static let shared = IGASDK()
+    
     //MARK: - Cancellable
     private var cancellable = Set<AnyCancellable>()
     
@@ -12,20 +14,30 @@ public final class IGASDK{
     //MARK: - Properties
     private var appKey : String = .init()
     private var userProperties: [String: Any]? = .init()
-
+    private var identity: UserIdentity
+    private var location : UserLocation?
+    
     //MARK: - init
-    public init(appKey: String = ""){
-        self.appKey = appKey
+    public init(){
+        self.identity = UserIdentity()
     }
-
+    
     //MARK: - Method
-    public static func setUserProperty(_ keyValue : [String : Any]?){
-        IGASDK().userProperties = keyValue
+    //init
+    public func `init`(appkey : String){
+        self.appKey = appkey
     }
-    public static func addEvent(_ eventName : String,_ keyValue : [String : Any]){
+    //setUserProperty
+    public func setUserProperty(_ keyValue : [String : Any]?){
+        self.userProperties = keyValue
+    }
+    //addEvent
+    public func addEvent(_ eventName : String,_ keyValue : [String : Any]){
         DfineryAPIService.shared.addEvent(eventName, keyValue)
     }
-    public static func setLocation(lat : Double, lng : Double){
-        
+    //setLocation
+    public func setLocation(lat : Double, lng : Double){
+        self.location?.lat = lat
+        self.location?.lng = lng
     }
 }

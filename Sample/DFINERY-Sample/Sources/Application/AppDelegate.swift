@@ -25,11 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.locationManager.requestWhenInUseAuthorization()
         
     }
-    
-
 }
 //MARK: - CLLocation
 extension AppDelegate : CLLocationManagerDelegate{
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription) // error 나면 message 받음
+    }
     
     // 기존 locationManager(didChangeAuthorization:_)이 iOS 14 부터 deprecated 됨
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

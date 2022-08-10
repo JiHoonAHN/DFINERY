@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AppTrackingTransparency
+import AdSupport
 
 class ViewController: UIViewController {
 

@@ -1,6 +1,6 @@
 import Foundation
 
 struct UserLocation{
-    let lat : Float
-    let lng : Float
+    let lat : Double
+    let lng : Double
 }

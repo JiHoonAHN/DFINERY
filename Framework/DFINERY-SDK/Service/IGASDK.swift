@@ -25,4 +25,7 @@ public final class IGASDK{
     public static func addEvent(_ eventName : String,_ keyValue : [String : Any]){
         DfineryAPIService.shared.addEvent(eventName, keyValue)
     }
+    public static func setLocation(lat : Double, lng : Double){
+        
+    }
 }

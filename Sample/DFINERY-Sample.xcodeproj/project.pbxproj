@@ -64,8 +64,8 @@
 		EE83EB0028A03E7400309781 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EE83EB0528A03EDE00309781 /* ViewController */,
 				EE83EB0328A03ECA00309781 /* Application */,
+				EE83EB0528A03EDE00309781 /* ViewController */,
 			);
 			path = Sources;
 			sourceTree = "<group>";

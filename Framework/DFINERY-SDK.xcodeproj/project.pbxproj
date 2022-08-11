@@ -7,14 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE18128328A57ECF00639CA8 /* LoggingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18128128A57ECF00639CA8 /* LoggingSystem.swift */; };
+		EE18128428A57ECF00639CA8 /* LoggingExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18128228A57ECF00639CA8 /* LoggingExt.swift */; };
+		EE18128928A57F0100639CA8 /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18128628A57F0100639CA8 /* DataEncoding.swift */; };
+		EE18128A28A57F0100639CA8 /* NetworkExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18128828A57F0100639CA8 /* NetworkExt.swift */; };
+		EE18128E28A57F3C00639CA8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18128C28A57F3C00639CA8 /* APIClient.swift */; };
+		EE18128F28A57F3C00639CA8 /* RequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18128D28A57F3C00639CA8 /* RequestClient.swift */; };
+		EE18129128A57F4F00639CA8 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18129028A57F4F00639CA8 /* HttpMethod.swift */; };
+		EE18129328A57F5F00639CA8 /* DFINERYAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18129228A57F5F00639CA8 /* DFINERYAPI.swift */; };
+		EEBC00C428A2DB1100F00047 /* RequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00C328A2DB1100F00047 /* RequestEvent.swift */; };
+		EEBC00C828A2DCDC00F00047 /* CompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */; };
+		EEBC00D128A2DEDD00F00047 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00D028A2DEDD00F00047 /* Location.swift */; };
+		EEBC00D428A2DEEB00F00047 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC00D328A2DEEB00F00047 /* Identity.swift */; };
+		EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC9187628A27DBF00891E5C /* DateExt.swift */; };
+		EECE25E828A2D73A00BA1782 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E428A2D73A00BA1782 /* BaseURL.swift */; };
+		EECE25E928A2D73A00BA1782 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E528A2D73A00BA1782 /* Request.swift */; };
+		EECE25EA28A2D73A00BA1782 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25E628A2D73A00BA1782 /* NetworkDispatcher.swift */; };
+		EECE25EE28A2D77600BA1782 /* DeviceExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25EC28A2D77600BA1782 /* DeviceExt.swift */; };
+		EECE25EF28A2D77600BA1782 /* LogExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE25ED28A2D77600BA1782 /* LogExt.swift */; };
 		EEE74EC4289E4372000E7CEE /* DFINERY_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEE74ECB289E43E7000E7CEE /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EEE74ECA289E43E7000E7CEE /* .gitkeep */; };
+		EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */; };
+		EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE74F28289E88F0000E7CEE /* IGASDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE18128128A57ECF00639CA8 /* LoggingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingSystem.swift; sourceTree = "<group>"; };
+		EE18128228A57ECF00639CA8 /* LoggingExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingExt.swift; sourceTree = "<group>"; };
+		EE18128628A57F0100639CA8 /* DataEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
+		EE18128828A57F0100639CA8 /* NetworkExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkExt.swift; sourceTree = "<group>"; };
+		EE18128C28A57F3C00639CA8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EE18128D28A57F3C00639CA8 /* RequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestClient.swift; sourceTree = "<group>"; };
+		EE18129028A57F4F00639CA8 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		EE18129228A57F5F00639CA8 /* DFINERYAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFINERYAPI.swift; sourceTree = "<group>"; };
+		EEBC00C328A2DB1100F00047 /* RequestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEvent.swift; sourceTree = "<group>"; };
+		EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteResponse.swift; sourceTree = "<group>"; };
+		EEBC00D028A2DEDD00F00047 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EEBC00D328A2DEEB00F00047 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		EEBC00D728A2ECCC00F00047 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		EEC9187628A27DBF00891E5C /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		EECE25E428A2D73A00BA1782 /* BaseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		EECE25E528A2D73A00BA1782 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EECE25E628A2D73A00BA1782 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		EECE25EC28A2D77600BA1782 /* DeviceExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExt.swift; sourceTree = "<group>"; };
+		EECE25ED28A2D77600BA1782 /* LogExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogExt.swift; sourceTree = "<group>"; };
 		EEE74EC0289E4372000E7CEE /* DFINERY_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFINERY_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFINERY_SDK.h; sourceTree = "<group>"; };
-		EEE74ECA289E43E7000E7CEE /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DfineryError.swift; sourceTree = "<group>"; };
+		EEE74F28289E88F0000E7CEE /* IGASDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGASDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,11 +67,160 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE18128528A57F0100639CA8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE18128628A57F0100639CA8 /* DataEncoding.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE18128728A57F0100639CA8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE18128828A57F0100639CA8 /* NetworkExt.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EE18128B28A57F3C00639CA8 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				EE18128C28A57F3C00639CA8 /* APIClient.swift */,
+				EE18128D28A57F3C00639CA8 /* RequestClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		EEBC00C228A2DAFB00F00047 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00C328A2DB1100F00047 /* RequestEvent.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EEBC00C628A2DCDC00F00047 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00C728A2DCDC00F00047 /* CompleteResponse.swift */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		EEBC00CA28A2DDEC00F00047 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				EECE25EC28A2D77600BA1782 /* DeviceExt.swift */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		EEBC00CB28A2DDF400F00047 /* OSLog */ = {
+			isa = PBXGroup;
+			children = (
+				EECE25ED28A2D77600BA1782 /* LogExt.swift */,
+			);
+			path = OSLog;
+			sourceTree = "<group>";
+		};
+		EEBC00CC28A2DDFC00F00047 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				EEC9187628A27DBF00891E5C /* DateExt.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		EEBC00CE28A2DED300F00047 /* Req */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D228A2DEE000F00047 /* Identity */,
+				EEBC00CF28A2DED800F00047 /* Location */,
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
+		EEBC00CF28A2DED800F00047 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D028A2DEDD00F00047 /* Location.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		EEBC00D228A2DEE000F00047 /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D328A2DEEB00F00047 /* Identity.swift */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		EEBC00D628A2ECCC00F00047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00D728A2ECCC00F00047 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EECE25E028A2D72000BA1782 /* OSLog */ = {
+			isa = PBXGroup;
+			children = (
+				EE18128228A57ECF00639CA8 /* LoggingExt.swift */,
+				EE18128128A57ECF00639CA8 /* LoggingSystem.swift */,
+			);
+			path = OSLog;
+			sourceTree = "<group>";
+		};
+		EECE25E328A2D73A00BA1782 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EE18129028A57F4F00639CA8 /* HttpMethod.swift */,
+				EECE25E428A2D73A00BA1782 /* BaseURL.swift */,
+				EECE25E528A2D73A00BA1782 /* Request.swift */,
+				EECE25E628A2D73A00BA1782 /* NetworkDispatcher.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		EEDB85A7289F873600F49751 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74EEB289E4F8C000E7CEE /* Error */,
+				EEE74EE6289E4F66000E7CEE /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EEDB85A8289F873E00F49751 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEBC00CE28A2DED300F00047 /* Req */,
+				EEBC00C628A2DCDC00F00047 /* Res */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEDB85AC289FE01C00F49751 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EE18128528A57F0100639CA8 /* Data */,
+				EE18128728A57F0100639CA8 /* Network */,
+				EEBC00CC28A2DDFC00F00047 /* Date */,
+				EEBC00CB28A2DDF400F00047 /* OSLog */,
+				EEBC00CA28A2DDEC00F00047 /* UIDevice */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		EEE74EB6289E4372000E7CEE = {
 			isa = PBXGroup;
 			children = (
 				EEE74EC2289E4372000E7CEE /* DFINERY-SDK */,
 				EEE74EC1289E4372000E7CEE /* Products */,
+				EEBC00D628A2ECCC00F00047 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,10 +235,41 @@
 		EEE74EC2289E4372000E7CEE /* DFINERY-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				EECE25E028A2D72000BA1782 /* OSLog */,
+				EEDB85AC289FE01C00F49751 /* Util */,
+				EEDB85A8289F873E00F49751 /* Model */,
+				EEDB85A7289F873600F49751 /* Network */,
+				EEE74ECD289E44B4000E7CEE /* Service */,
 				EEE74EC3289E4372000E7CEE /* DFINERY_SDK.h */,
-				EEE74ECA289E43E7000E7CEE /* .gitkeep */,
 			);
 			path = "DFINERY-SDK";
+			sourceTree = "<group>";
+		};
+		EEE74ECD289E44B4000E7CEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F28289E88F0000E7CEE /* IGASDK.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EEE74EE6289E4F66000E7CEE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EE18129228A57F5F00639CA8 /* DFINERYAPI.swift */,
+				EE18128B28A57F3C00639CA8 /* Client */,
+				EEBC00C228A2DAFB00F00047 /* Protocol */,
+				EECE25E328A2D73A00BA1782 /* Setting */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EEE74EEB289E4F8C000E7CEE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				EEE74F0F289E7A6B000E7CEE /* DfineryError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +315,7 @@
 				TargetAttributes = {
 					EEE74EBF289E4372000E7CEE = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -122,7 +342,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE74ECB289E43E7000E7CEE /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +352,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE74F10289E7A6B000E7CEE /* DfineryError.swift in Sources */,
+				EE18128E28A57F3C00639CA8 /* APIClient.swift in Sources */,
+				EECE25EF28A2D77600BA1782 /* LogExt.swift in Sources */,
+				EEBC00D428A2DEEB00F00047 /* Identity.swift in Sources */,
+				EE18128428A57ECF00639CA8 /* LoggingExt.swift in Sources */,
+				EEBC00C828A2DCDC00F00047 /* CompleteResponse.swift in Sources */,
+				EE18129328A57F5F00639CA8 /* DFINERYAPI.swift in Sources */,
+				EE18128928A57F0100639CA8 /* DataEncoding.swift in Sources */,
+				EECE25EA28A2D73A00BA1782 /* NetworkDispatcher.swift in Sources */,
+				EEBC00D128A2DEDD00F00047 /* Location.swift in Sources */,
+				EEC9187728A27DBF00891E5C /* DateExt.swift in Sources */,
+				EE18129128A57F4F00639CA8 /* HttpMethod.swift in Sources */,
+				EECE25E828A2D73A00BA1782 /* BaseURL.swift in Sources */,
+				EE18128328A57ECF00639CA8 /* LoggingSystem.swift in Sources */,
+				EECE25E928A2D73A00BA1782 /* Request.swift in Sources */,
+				EEE74F29289E88F0000E7CEE /* IGASDK.swift in Sources */,
+				EE18128F28A57F3C00639CA8 /* RequestClient.swift in Sources */,
+				EEBC00C428A2DB1100F00047 /* RequestEvent.swift in Sources */,
+				EECE25EE28A2D77600BA1782 /* DeviceExt.swift in Sources */,
+				EE18128A28A57F0100639CA8 /* NetworkExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +501,8 @@
 		EEE74EC8289E4372000E7CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -282,6 +523,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +532,8 @@
 		EEE74EC9289E4372000E7CEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

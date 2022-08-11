@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DFINERY_SDK
+import Combine
+import CoreTelephony
+@_exported import DFINERY_SDK
+import Foundation
+import Network
+import Swift
+import UIKit
+import _Concurrency
+import os.log
+import os
+public enum DfineryError : Foundation.LocalizedError, Swift.Equatable {
+  case invalidRequest
+  case badRequest
+  case unauthorized
+  case forbidden
+  case notFound
+  case error4xx(_: Swift.Int)
+  case serverError
+  case error5xx(_: Swift.Int)
+  case decodingError
+  case urlSessionFailed(_: Foundation.URLError)
+  case unknownError
+  public static func == (a: DFINERY_SDK.DfineryError, b: DFINERY_SDK.DfineryError) -> Swift.Bool
+}
+public struct CompleteResponse : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum DFINERYAPI {
+  case addEvent
+  public static func == (a: DFINERY_SDK.DFINERYAPI, b: DFINERY_SDK.DFINERYAPI) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension DFINERY_SDK.DFINERYAPI : DFINERY_SDK.Request {
+  public typealias ReturnType = DFINERY_SDK.CompleteResponse
+  public var method: DFINERY_SDK.HTTPMethod {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol Request {
+  var path: Swift.String { get }
+  var method: DFINERY_SDK.HTTPMethod { get }
+  associatedtype ReturnType : Swift.Decodable, Swift.Encodable
+}
+extension DFINERY_SDK.Request {
+  public func asURLRequest(body: Foundation.Data) -> Foundation.URLRequest?
+}
+final public class IGASDK {
+  public static let shared: DFINERY_SDK.IGASDK
+  public init()
+  final public func `init`(appkey: Swift.String)
+  final public func setUserProperty(_ keyValue: [Swift.String : Any]?)
+  final public func addEvent(_ eventName: Swift.String, _ keyValue: [Swift.String : Any]?)
+  final public func setLocation(lat: Swift.Double, lng: Swift.Double)
+  final public func startIDFA(adid: Swift.String)
+  final public func cancelIDFA()
+  @objc deinit
+}
+extension DFINERY_SDK.DFINERYAPI : Swift.Equatable {}
+extension DFINERY_SDK.DFINERYAPI : Swift.Hashable {}
+extension DFINERY_SDK.HTTPMethod : Swift.Equatable {}
+extension DFINERY_SDK.HTTPMethod : Swift.Hashable {}
+extension DFINERY_SDK.HTTPMethod : Swift.RawRepresentable {}

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EE1812D428A5908800639CA8 /* DFINERY_SDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */; };
 		EE1812D528A5908800639CA8 /* DFINERY_SDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE1812DA28A59B8300639CA8 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1812D928A59B8300639CA8 /* UIViewExt.swift */; };
+		EE1812DD28A59C7100639CA8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1812DC28A59C7100639CA8 /* BaseViewController.swift */; };
+		EE1812E228A5A25400639CA8 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1812E128A5A25400639CA8 /* Layout.swift */; };
 		EE83EAED28A03E6E00309781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83EAEC28A03E6E00309781 /* AppDelegate.swift */; };
 		EE83EAEF28A03E6E00309781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83EAEE28A03E6E00309781 /* SceneDelegate.swift */; };
 		EE83EAF128A03E6E00309781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83EAF028A03E6E00309781 /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DFINERY_SDK.xcframework; sourceTree = "<group>"; };
+		EE1812D928A59B8300639CA8 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		EE1812DC28A59C7100639CA8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EE1812E128A5A25400639CA8 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		EE83EAE928A03E6E00309781 /* DFINERY-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DFINERY-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE83EAEC28A03E6E00309781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE83EAEE28A03E6E00309781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,32 @@
 				EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE1812D728A59B6200639CA8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EE1812DB28A59BD600639CA8 /* Base */,
+				EE1812D828A59B6F00639CA8 /* UIView */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EE1812D828A59B6F00639CA8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				EE1812D928A59B8300639CA8 /* UIViewExt.swift */,
+				EE1812E128A5A25400639CA8 /* Layout.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		EE1812DB28A59BD600639CA8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EE1812DC28A59C7100639CA8 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		EE83EAE028A03E6E00309781 = {
@@ -93,6 +125,7 @@
 			children = (
 				EE83EB0328A03ECA00309781 /* Application */,
 				EE83EB0528A03EDE00309781 /* ViewController */,
+				EE1812D728A59B6200639CA8 /* Util */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -202,6 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1812DD28A59C7100639CA8 /* BaseViewController.swift in Sources */,
+				EE1812DA28A59B8300639CA8 /* UIViewExt.swift in Sources */,
+				EE1812E228A5A25400639CA8 /* Layout.swift in Sources */,
 				EE83EAF128A03E6E00309781 /* ViewController.swift in Sources */,
 				EE83EAED28A03E6E00309781 /* AppDelegate.swift in Sources */,
 				EE83EAEF28A03E6E00309781 /* SceneDelegate.swift in Sources */,

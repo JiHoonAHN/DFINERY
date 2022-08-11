@@ -14,19 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ReXK1J9xWl8S9LK1Rg50+ffFvsk=
+		fzNnNYo6GHO3ZDEA7W8AzIT8GYM=
 		</data>
 		<key>Modules/DFINERY_SDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		w37xcZadxjR9awaCP7NXkybqdxs=
+		1TWQPQ+r2FKB+0mOP78i03be0rc=
 		</data>
 		<key>Modules/DFINERY_SDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/Iuu7ZuG6WgwBvYzGXRy8M3GH5k=
+		+ApW24erK0ZtWnokHA1eNmCEJXg=
 		</data>
 		<key>Modules/DFINERY_SDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		RwX2popAQ6HcwY+ijYjK4lLJBjo=
+		2vS3kzkKDWyp+gZ8TNr9/0aJeyY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,21 +53,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lm6tjqgFknASNHO45my+lGm1slyUUMJI3dU23k7NcEI=
+			8c5LOiG87uXRpUpGgYZINEs/5E5kYHh1XPo7k3i4FG8=
 			</data>
 		</dict>
 		<key>Modules/DFINERY_SDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uLbW/YFv+GORtgHl9xur7twPcSOLTSOAoUPuoQyR8JI=
+			JsNDQcD0lBnaEF0ge7Nzvns3PT977xxtEvnz1aXl7Gk=
 			</data>
 		</dict>
 		<key>Modules/DFINERY_SDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l/CqxmyiITBT/zqStM2rnsmmBwVknwjdk7Bp7CeodcM=
+			bgPmeFvkGKk+eOfpei4or826PxDirKqlYfAqzNdu/ww=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

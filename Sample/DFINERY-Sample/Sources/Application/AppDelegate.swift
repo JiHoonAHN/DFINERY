@@ -1,5 +1,7 @@
 import UIKit
 import CoreLocation
+import AppTrackingTransparency
+import AdSupport
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -9,7 +11,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         locationSetting()
-        
+        requestTrackingSetting()
         return true
     }
 
@@ -25,6 +27,19 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         self.locationManager.requestWhenInUseAuthorization()
         
     }
+    private func requestTrackingSetting(){
+        ATTrackingManager.requestTrackingAuthorization { status in
+            switch status{
+            case .authorized:
+                break
+            case .notDetermined,.restricted, .denied:
+                break
+            @unknown default:
+                break
+            }
+        }
+    }
+    
 }
 //MARK: - CLLocation
 extension AppDelegate : CLLocationManagerDelegate{

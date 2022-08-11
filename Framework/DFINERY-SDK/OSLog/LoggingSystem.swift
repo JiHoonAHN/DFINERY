@@ -33,13 +33,13 @@ final class LoggingSystem {
             receiveCompletion: { completion in
                 switch completion{
                 case .finished:
-                    print("finished")
+                    Log.debug("finish")
                 case let .failure(error):
-                    print(error)
+                    Log.error("Fail Logging system : Networking Error \(error.localizedDescription) ")
                 }
             },
             receiveValue: {value in
-                print(value)
+                Log.custom(category: "Networking Succewss", "Success Logging system : NetworkingSuccess - \(value)")
             })
         .store(in: &cancellable)
     }

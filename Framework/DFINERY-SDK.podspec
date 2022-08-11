@@ -10,8 +10,5 @@ s.source_files     = "DFINERY-SDK/..."
 s.requires_arc     = true
 
 s.swift_version = "5.0"
-s.ios.deployment_target = "9.0"
-s.osx.deployment_target = "10.9"
-s.tvos.deployment_target = "9.0"
-s.watchos.deployment_target = "2.0"
+s.ios.deployment_target = "13.0"
 end

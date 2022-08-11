@@ -27,7 +27,7 @@ public final class IGASDK{
         self.userProperties = keyValue
     }
     //addEvent
-    public func addEvent(_ eventName : String,_ keyValue : [String : Any]){
+    public func addEvent(_ eventName : String,_ keyValue : [String : Any]?){
         loggingSystem.system(
             appKey: self.appKey,
             event: eventName,

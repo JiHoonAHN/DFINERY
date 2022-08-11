@@ -2,10 +2,10 @@ import UIKit
 import CoreLocation
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
-    var locationManager : CLLocationManager!
+    var locationManager : CLLocationManager = CLLocationManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         locationSetting()

@@ -93,7 +93,7 @@ extension RequestClient{
         if languageAndCountry.count == 2{
             return (String(languageAndCountry[0]), String(languageAndCountry[1]))
         }
-        return (String(languageAndCountry[0]), String(languageAndCountry[1]))
+        return (String(languageAndCountry[0]), nil)
     }
     
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1812D428A5908800639CA8 /* DFINERY_SDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */; };
+		EE1812D528A5908800639CA8 /* DFINERY_SDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE83EAED28A03E6E00309781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83EAEC28A03E6E00309781 /* AppDelegate.swift */; };
 		EE83EAEF28A03E6E00309781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83EAEE28A03E6E00309781 /* SceneDelegate.swift */; };
 		EE83EAF128A03E6E00309781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83EAF028A03E6E00309781 /* ViewController.swift */; };
@@ -14,7 +16,22 @@
 		EE83EAF928A03E7000309781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE83EAF728A03E7000309781 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EE1812D628A5908800639CA8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE1812D528A5908800639CA8 /* DFINERY_SDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DFINERY_SDK.xcframework; sourceTree = "<group>"; };
 		EE83EAE928A03E6E00309781 /* DFINERY-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DFINERY-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE83EAEC28A03E6E00309781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE83EAEE28A03E6E00309781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,12 +46,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1812D428A5908800639CA8 /* DFINERY_SDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE1812D128A5907300639CA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE1812D228A5907300639CA8 /* DFINERY_SDK.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE83EAE028A03E6E00309781 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +80,7 @@
 		EE83EAEB28A03E6E00309781 /* DFINERY-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				EE1812D128A5907300639CA8 /* Frameworks */,
 				EE83EB0228A03E8200309781 /* Supporting */,
 				EE83EB0128A03E7900309781 /* Resources */,
 				EE83EB0028A03E7400309781 /* Sources */,
@@ -114,6 +141,7 @@
 				EE83EAE528A03E6E00309781 /* Sources */,
 				EE83EAE628A03E6E00309781 /* Frameworks */,
 				EE83EAE728A03E6E00309781 /* Resources */,
+				EE1812D628A5908800639CA8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

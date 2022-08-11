@@ -68,7 +68,6 @@ final class RequestClient : RequestEvent{
                 "appkey" : "appkey \(appKey)"
             ]
         ]
-        print(dictionary)
         return Data().encoding(dictionary)
     }
 }
@@ -89,9 +88,12 @@ extension RequestClient{
     }
     
     //MARK: - language & country
-    private func toLanguageAndCountry() -> (language: String, country : String)?{
+    private func toLanguageAndCountry() -> (language: String, country : String?)?{
         guard let languageAndCountry = self.language.first?.split(separator: "-") else {return nil}
-        return (String(languageAndCountry[0]), "kr")
+        if languageAndCountry.count == 2{
+            return (String(languageAndCountry[0]), String(languageAndCountry[1]))
+        }
+        return (String(languageAndCountry[0]), String(languageAndCountry[1]))
     }
     
 }

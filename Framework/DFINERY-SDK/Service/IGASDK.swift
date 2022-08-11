@@ -42,4 +42,12 @@ public final class IGASDK{
         self.location?.lat = lat
         self.location?.lng = lng
     }
+    //idfa status
+    public func startIDFA(adid : String){
+        self.identity.adidOptOut = true
+        self.identity.appleAdidIdentity = adid
+    }
+    public func cancelIDFA(){
+        self.identity.adidOptOut = false
+    }
 }

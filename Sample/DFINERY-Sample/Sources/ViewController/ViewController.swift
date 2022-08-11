@@ -8,14 +8,12 @@ final class ViewController: BaseVC {
     //MARK: - Properties
     private let nameTextField : UITextField = {
         let textfield = UITextField()
-        textfield.translatesAutoresizingMaskIntoConstraints = false
         textfield.placeholder = "Write your nickName."
         return textfield
     }()
     
     private lazy var joinButton : UIButton = {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor  = .systemBlue
         button.setTitle("Join", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)

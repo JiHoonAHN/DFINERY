@@ -39,8 +39,7 @@ public final class IGASDK{
     }
     //setLocation
     public func setLocation(lat : Double, lng : Double){
-        self.location?.lat = lat
-        self.location?.lng = lng
+        self.location = UserLocation(lat: lat, lng: lng)
     }
     //idfa status
     public func startIDFA(adid : String){

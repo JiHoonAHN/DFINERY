@@ -1,22 +1,32 @@
-//
-//  ViewController.swift
-//  DFINERY-Sample
-//
-//  Created by Ji-hoon Ahn on 2022/08/08.
-//
-
 import UIKit
-import AppTrackingTransparency
-import AdSupport
+import DFINERY_SDK
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    
+    //MARK: - Properties
+    private let igasdk = IGASDK.shared
+    
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureUI()
+        addView()
+        setLayout()
     }
-
-
+    
+    //MARK: - Method
+    private func configureUI(){
+        self.title = "Login"
+        self.view.backgroundColor = .white
+    }
+    
+    private func addView(){
+        
+    }
+    
+    private func setLayout(){
+        
+    }
 }
 
 

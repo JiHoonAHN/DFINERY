@@ -2,15 +2,16 @@ import UIKit
 import CoreLocation
 import AppTrackingTransparency
 import AdSupport
+import DFINERY_SDK
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
-    var locationManager : CLLocationManager = CLLocationManager()
+    private let igasdk = IGASDK.shared
+    private let locationManager : CLLocationManager = CLLocationManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        locationSetting()
+        requestlocationSetting()
         requestTrackingSetting()
         return true
     }
@@ -22,20 +23,21 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //MARK: - Method
-    private func locationSetting(){
+    private func requestlocationSetting(){
         self.locationManager.delegate = self
         self.locationManager.requestWhenInUseAuthorization()
-        
     }
+
     private func requestTrackingSetting(){
         ATTrackingManager.requestTrackingAuthorization { status in
             switch status{
             case .authorized:
-                break
+                let adid = ASIdentifierManager.shared().advertisingIdentifier.uuidString
+                self.igasdk.startIDFA(adid: adid)
             case .notDetermined,.restricted, .denied:
-                break
+                self.igasdk.cancelIDFA()
             @unknown default:
-                break
+                self.igasdk.cancelIDFA()
             }
         }
     }
@@ -48,10 +50,15 @@ extension AppDelegate : CLLocationManagerDelegate{
         print(error.localizedDescription) // error 나면 message 받음
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.locationSetting()
+    }
+    
     // 기존 locationManager(didChangeAuthorization:_)이 iOS 14 부터 deprecated 됨
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus{
         case .authorizedAlways, .authorizedWhenInUse:
+            self.locationSetting()
             print("GPS Setting Complete")
         case .notDetermined:
             print("GPS notDetermined")
@@ -64,5 +71,10 @@ extension AppDelegate : CLLocationManagerDelegate{
         }
     }
     
+    //MARK: - Custom Method
+    private func locationSetting(){
+        guard let location = self.locationManager.location?.coordinate else { return }
+        igasdk.setLocation(lat: location.latitude, lng: location.longitude)
+    }
 }
 

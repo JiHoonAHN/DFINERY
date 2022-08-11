@@ -33,7 +33,15 @@ public final class IGASDK{
     }
     //addEvent
     public func addEvent(_ eventName : String,_ keyValue : [String : Any]){
-        DfineryAPIService.shared.addEvent(eventName, keyValue)
+        api.addEvent(
+            request: DFINERYAPI.self,
+            appKey: self.appKey,
+            event: eventName,
+            param: keyValue,
+            userProperties: self.userProperties,
+            identity: self.identity,
+            location: self.location
+        )?.sink(receiveCompletion: <#T##((Subscribers.Completion<DfineryError>) -> Void)##((Subscribers.Completion<DfineryError>) -> Void)##(Subscribers.Completion<DfineryError>) -> Void#>, receiveValue: <#T##((CompleteResponse) -> Void)##((CompleteResponse) -> Void)##(CompleteResponse) -> Void#>)
     }
     //setLocation
     public func setLocation(lat : Double, lng : Double){

@@ -12,7 +12,7 @@ final class RequestClient : RequestEvent{
 
     //MARK: - Initalizer
     init(
-        networkMonitoring : NWPathMonitor,
+        networkMonitoring : NWPathMonitor = NWPathMonitor(),
         deviceInfo : UIDevice = .current,
         resolution : UIScreen = .main,
         carrier : [String: CTCarrier]? = CTTelephonyNetworkInfo().serviceSubscriberCellularProviders,

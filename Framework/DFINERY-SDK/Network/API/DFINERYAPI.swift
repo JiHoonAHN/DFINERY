@@ -1,11 +1,20 @@
 import Foundation
 
-enum DFINERYAPI{
+public enum DFINERYAPI{
     case addEvent
 }
 
 extension DFINERYAPI : Request{
-    var path: String {
+    public typealias ReturnType = CompleteResponse
+    
+    public var method: HTTPMethod {
+        switch self{
+        case .addEvent:
+            return .post
+        }
+    }
+    
+    public var path: String {
         switch self{
         case .addEvent:
             return "/api/AddEvent"

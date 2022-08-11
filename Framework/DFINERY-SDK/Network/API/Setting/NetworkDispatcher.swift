@@ -2,12 +2,17 @@ import Foundation
 import Combine
 
 struct NetworkDispatcher{
+    //MARK: - Properties
     let urlSession : URLSession!
-    public init(urlSession : URLSession = .shared){
+    let requestClient : RequestEvent
+    
+    //MARK: - init
+    public init(urlSession : URLSession = .shared, requestClient : RequestEvent = RequestClient()){
         self.urlSession = urlSession
+        self.requestClient = requestClient
     }
     
-    func dispatch<ReturnType : Codable>(request : URLRequest) -> AnyPublisher<ReturnType,DfineryError>{
+    func dispatch<ReturnType : Decodable>(request : URLRequest) -> AnyPublisher<ReturnType,DfineryError>{
         return urlSession
             .dataTaskPublisher(for: request)
             .tryMap(){ data, response in

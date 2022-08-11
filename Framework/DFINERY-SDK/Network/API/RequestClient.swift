@@ -63,12 +63,12 @@ final class RequestClient : RequestEvent{
                     "carrier" : toCarrier() ?? .init(),
                     "language" : toLanguageAndCountry()?.language ?? "",
                     "country" : toLanguageAndCountry()?.country ?? ""
-                ]
-            ],
-            "package_name" : Bundle.main.bundleIdentifier ?? "",
-            "appkey" : "appkey\(appKey)"
+                ],
+                "package_name" : Bundle.main.bundleIdentifier ?? "",
+                "appkey" : "appkey \(appKey)"
+            ]
         ]
-        
+        print(dictionary)
         return Data().encoding(dictionary)
     }
 }
@@ -91,9 +91,7 @@ extension RequestClient{
     //MARK: - language & country
     private func toLanguageAndCountry() -> (language: String, country : String)?{
         guard let languageAndCountry = self.language.first?.split(separator: "-") else {return nil}
-        let launguage = String(languageAndCountry[0])
-        let country = String(languageAndCountry[1])
-        return (launguage,country)
+        return (String(languageAndCountry[0]), "kr")
     }
     
 }

@@ -4,14 +4,9 @@ import Combine
 public final class IGASDK{
     public static let shared = IGASDK()
     
-    //MARK: - Cancellable
-    private var cancellable = Set<AnyCancellable>()
-    
-    //MARK: - Networking Properties
-    let dispatcher = NetworkDispatcher()
-    let api = APIClient()
-    
     //MARK: - Properties
+    private let loggingSystem = LoggingSystem()
+    
     private var appKey : String = .init()
     private var userProperties: [String: Any]? = .init()
     private var identity: UserIdentity
@@ -33,15 +28,14 @@ public final class IGASDK{
     }
     //addEvent
     public func addEvent(_ eventName : String,_ keyValue : [String : Any]){
-        api.addEvent(
-            request: DFINERYAPI.self,
+        loggingSystem.system(
             appKey: self.appKey,
             event: eventName,
             param: keyValue,
             userProperties: self.userProperties,
             identity: self.identity,
             location: self.location
-        )?.sink(receiveCompletion: <#T##((Subscribers.Completion<DfineryError>) -> Void)##((Subscribers.Completion<DfineryError>) -> Void)##(Subscribers.Completion<DfineryError>) -> Void#>, receiveValue: <#T##((CompleteResponse) -> Void)##((CompleteResponse) -> Void)##(CompleteResponse) -> Void#>)
+        )
     }
     //setLocation
     public func setLocation(lat : Double, lng : Double){

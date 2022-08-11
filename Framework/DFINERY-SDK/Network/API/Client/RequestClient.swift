@@ -46,7 +46,8 @@ final class RequestClient : RequestEvent{
                     "lat" : location?.lat,
                     "lng" : location?.lng
                 ],
-                "param" : param ?? [:]
+                "param" : param ?? [:],
+                "user_properties" : userProperties ?? [:]
             ],
             "common" : [
                 "identity" : [
